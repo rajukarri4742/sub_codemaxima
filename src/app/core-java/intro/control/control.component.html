@@ -1,0 +1,219 @@
+<div>
+  <div class="card card-body">
+    <!--<p>   another collapse start here </p>-->
+    <h3>Control Statements</h3>
+    <div id="accordion">
+      <div class="tab-title tab-slide-effect">
+        <span class="tab-pill" id="if-condition-type1" [ngClass]="(elementId=='if-condition-type1')?'active':''"
+          (click)="tabChange($event)" data-hover="if Condition">if Condition</span>
+        <span class="tab-pill" id="if-condition-type2" [ngClass]="(elementId=='if-condition-type2')?'active':''"
+          (click)="tabChange($event)" data-hover="if else Condition">if else Condition</span>
+        <span class="tab-pill" id="if-condition-type3" [ngClass]="(elementId=='if-condition-type3')?'active':''"
+          (click)="tabChange($event)" data-hover="else if ladder">else if ladder</span>
+        <span class="tab-pill" id="if-condition-type4" [ngClass]="(elementId=='if-condition-type4')?'active':''"
+          (click)="tabChange($event)" data-hover="switch Condition">switch Condition</span>
+        <span class="tab-pill" id="if-condition-type5" [ngClass]="(elementId=='if-condition-type5')?'active':''"
+          (click)="tabChange($event)" data-hover="Nested if Condition">Nested if Condition</span>
+      </div>
+
+      <div *ngIf="elementId=='if-condition-type1'">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement"
+                aria-expanded="false" aria-controls="ProblemStatement">
+                If Condition
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <p>The if condition check the boolean condition if the boolean condition was true then it allow to execute
+                the if block.</p>
+              <p>Example : </p>
+              <img src="assets/img/intro/if.JPG" />
+              <p>In the above example the first condition is true because value(22) is grater than 11 so that block
+                executed.</p>
+              <p>The second condition is false(22 is not grater than 85) so that block is not executed.</p>
+              <p>Example with all Datatypes :- </p>
+              <img src="assets/img/intro/ifdata.JPG" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'IfCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="elementId=='if-condition-type2'">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#ifelse"
+                aria-expanded="false" aria-controls="Program">
+                If-else condition
+              </button>
+            </h5>
+          </div>
+          <div id="ifelse" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <p>The simple if condition check the true block in if-else statement also take care for the false block
+                also.</p>
+              <p>If condition is true, if block will executes otherwise(false) else block will be executed.</p>
+              <p>Example :- </p>
+              <img src="assets/img/intro/ifelse.JPG" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'If-ElseCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="elementId=='if-condition-type3'">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#elseiflader"
+                aria-expanded="false" aria-controls="Program">
+                else-if lader
+              </button>
+            </h5>
+          </div>
+          <div id="elseiflader" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+
+              <p>The else-if lader is the combination of multiple if-else conditions.</p>
+              <p>Example :- </p>
+              <img src="assets/img/intro/elseiflader.JPG" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'01Even.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="elementId=='if-condition-type4'">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#switch"
+                aria-expanded="false" aria-controls="Program">
+                switch condition
+              </button>
+            </h5>
+          </div>
+          <div id="switch" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+
+              <p>The switch case is used to write differnt condition just like else else-if lader.
+                <br>Tthe difference is when condition is true we have to use break other wise it will check the all the
+                case conditions.
+              </p>
+              <p>Example :- </p>
+              <img src="assets/img/intro/switch.JPG" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'SwitchCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="elementId=='if-condition-type5'">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#nested"
+                aria-expanded="false" aria-controls="Program">
+                Nested if condition
+              </button>
+            </h5>
+          </div>
+          <div id="nested" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+
+              <p>The nested if else statement is, if-else condition in another if/else condition.</p>
+              <p>Example :- </p>
+              <img src="assets/img/intro/nested.JPG" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'NestedIfCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br />
+  </div>
+</div>

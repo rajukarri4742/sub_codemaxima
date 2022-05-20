@@ -1,0 +1,12 @@
+<nav class="row navbar navbar-expand-lg navbar-light bg-white border-bottom padding-top-bottom-16" *ngIf="showCoursesNavBar">
+  <div class="col-sm-auto">
+    <button class="menu-button-toggle fa fa-bars" id="menu-toggle" [class.visibility-hidden]="!showMiniSideBarIcon" (click)="onToggleSideBar()"></button>
+  </div>
+  <ul class="navbar-nav justify-content-center">
+    <li *ngFor="let course of coursesList; let count=index" class="nav-item" >
+      <a class="second-nav-links" (click)="onUserDashBoardLinkActivate()" [routerLinkActive]="['active']" [routerLink]="['/user-dash-board']" *ngIf="count==0">User Dash Board</a>
+      <a class="second-nav-links" (click)="loadChapters(course)" [ngClass]="(selectedCourse==course)?'active':''">{{course}}</a>
+    </li>
+  </ul>
+</nav>
+<!-- <span *ngIf="showCoursesNavBar">navbar: {{userInfo|json}} </span> -->

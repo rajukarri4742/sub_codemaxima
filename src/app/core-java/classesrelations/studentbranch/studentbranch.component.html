@@ -1,0 +1,104 @@
+<div>
+  <div class="card card-body">
+    <!--<p>   another collapse start here </p>-->
+    <h3>Student - Branch (One to One Relation)</h3>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement"
+              aria-expanded="true" aria-controls="ProblemStatement">
+              Student - Branch (One Student should have One Branch)
+            </button>
+          </h5>
+        </div>
+
+        <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+          <div class="card-body">
+
+            <div class="card-group">
+              <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                <div class="card-header text-center"><b>Student Class</b></div>
+                <div class="card-body">
+                  <p>Create Student class with following properties <br>
+                    Create a tester class and create & print atleast 5 student objects in the tester class main method.
+                  </p>
+                  <ul>
+                    <li>Declare all class variables as private.</li>
+                    <li>Write Defalut and parameterized constructor.</li>
+                    <li>Write Setters and Getters for each private variable.</li>
+                    <li>Write toString() method for the class.</li>
+                  </ul>
+                  <p>Here we are going to use branch class object in the student class as a parameter.</p>
+                  <p>Each student belongs to single branch only so one student have one branch. </p>
+                  <ol>
+                    <li>id - This property is to give unique id for student like rollnumber(int type)</li>
+                      <li>name - The name of the student.(string type)</li>
+                      <li><b>branch - The branch of the student.(Branch class object)</b></li>
+                      <li>section - The section of the student.(string type)</li>
+                      <li>totalMarks - The total marks of the student obtainded.(double type)</li>
+                      <li>grade - The Grade of the student(A,B,C,D and etc).(char type)</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                <div class="card-header text-center "><b>Branch Class</b></div>
+                <div class="card-body">
+                  <p>Create Branch class with following properties <br>
+                    Create a tester class and create & print atleast 5 Branch objects in the tester class main method.
+                  </p>
+                  <ul>
+                    <li>Declare all class variables as private.</li>
+                    <li>Write Defalut and parameterized constructor.</li>
+                    <li>Write Setters and Getters for each private variable.</li>
+                    <li>Write toString() method for the class.</li>
+                  </ul>
+                 
+                  <ol>
+                    <li>id - Branch unique id.(int type)</li>
+                    <li>name - Name of the branch(cse,it, mpc, bsc and etc).(string type)</li>
+                    <li>maxCapacity - Maximum number of students for the branch.(int type)</li>
+                  </ol>
+                </div>
+              </div>
+            </div> <!-- Ending of examples-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of the problem statement-->
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program"
+            aria-expanded="false" aria-controls="Program">
+            Program
+          </button>
+        </h5>
+      </div>
+      <div id="Program" class="collapse" aria-labelledby="headingThree">
+        <div class="card-body">
+          <div class="card-group">
+            <div class="card">
+              <h5 class="text-center card-title">Student POJO Class</h5>
+              <div class="card-body">
+                <img class="card-img-top" src="assets/img/classrelation/student.png" alt="">
+              </div>
+            </div>
+            <div class="card">
+              <h5 class="text-center card-title">Branch POJO Class</h5>
+              <div class="card-body">
+                <img class="card-img-top" src="assets/img/classrelation/branch.png" alt="">
+              </div>
+            </div>
+          </div>
+          <img class="card-img-top" src="assets/img/classrelation/studentbranch.JPG" alt="">
+        </div>
+      </div>
+    </div>
+    <!--end of pragram-->
+  </div>
+</div>

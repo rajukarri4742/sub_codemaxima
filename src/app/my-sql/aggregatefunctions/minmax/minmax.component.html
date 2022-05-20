@@ -1,0 +1,88 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>MIN & MAX Statement</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                MIN & MAX Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                        The MIN() function returns the smallest value of the selected column.
+                    </p>
+                    <p>
+                        The MAX() function returns the largest value of the selected column.
+
+                    </p>
+                    <img class="img-center" src="assets/img/mySql/preData/TABLE1.JPG" alt="pattern" >
+                    <pre>
+
+                    QUESION : Find MINIMUM  SALARY in EMPLOYEE table.
+
+                    Syntax : SELECT MIN(column_name) FROM table_name WHERE condition;
+
+                    QUESION : Find MAXIMUM SALARY in EMPLOYEE table.
+
+                    Syntax : SELECT MAX(column_name) FROM table_name WHERE condition;
+                    </pre>   
+                  </div>
+                </div>
+              </div>
+            </div><!-- Ending of problem statement card body-->
+          </div>
+        </div> <!-- Ending of problem statement-->
+       
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#testcases" aria-expanded="false" aria-controls="InputOutput">
+                QUERY 
+              </button>
+            </h5>
+          </div>
+          <div id="testcases" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+                <pre>
+            SELECT MIN(SALARY) FROM EMPLOYEE;
+
+            SELECT MAX(SALARY) FROM EMPLOYEE;
+                </pre>    
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#result" aria-expanded="false" aria-controls="InputOutput">
+                  Result Table
+                </button>
+              </h5>
+            </div>
+            <div id="result" class="collapse" aria-labelledby="headingTwo">
+              <div class="card-body">
+                <img class="img-center" src="assets/img/mySql/select/empTable1.JPG" alt="pattern" >  
+              </div>
+            </div>
+          </div>
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <!-- <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp> -->
+    </div>
+  </div> 
+  
+
+
+

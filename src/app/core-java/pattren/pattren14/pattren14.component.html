@@ -1,0 +1,84 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Pattern 14</h3>
+      
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#InputOutput" aria-expanded="false" aria-controls="InputOutput">
+                Pattern Examples
+              </button>
+            </h5>
+          </div>
+          <div id="InputOutput" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+               
+                <div class="prow">
+                    <div class="pcolumn">
+                      <img src="assets/img/patterns/pattern14_1.JPG" alt="pattern" >
+                    </div>
+                    <div class="pcolumn">
+                      <img src="assets/img/patterns/pattern14_2.JPG" alt="pattern" >
+                    </div>
+                    <div class="pcolumn">
+                      <img src="assets/img/patterns/pattern14_3.JPG" alt="pattern" >
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/patterns/pattern14program.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'Pattern14.m4v'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+  
+  </div>
+
+
+

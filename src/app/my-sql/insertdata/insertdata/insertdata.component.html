@@ -1,0 +1,59 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Insert Data Statement</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Insert Data Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                        The INSERT INTO statement is used to insert new records in a table. 
+                        It is possible to write the INSERT INTO statement in two ways.
+                    </p>
+                    <pre>
+1. Specify both the column names and the values to be inserted:
+
+        Syntax : INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
+                                      
+        E.g.: - INSERT INTO EMPLOYEE (ID, NAME, AGE, SALARY, LOCATION) VALUES (1, 'Ramesh', 32, 18000.00, 'Ahmedabad' );
+                    </pre>
+
+                    <img class="img-center" src="assets/img/mySql/insert/empTable.JPG" alt="pattern" >
+
+                    <pre>
+
+2. If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query:
+
+        Syntax : INSERT INTO table_name VALUES (value1, value2, value3, ...);
+                                      
+        E.g.: - INSERT INTO PRODUCT VALUES (101, 'LONOVA','LAPTOP', 20000.00 );
+
+                    </pre>
+                    <img class="img-center" src="assets/img/mySql/insert/productTable1.JPG" alt="pattern" >
+                  </div>
+                </div>
+              </div>
+            </div><!-- Ending of problem statement card body-->
+          </div>
+        </div> <!-- Ending of problem statement-->
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <!-- <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp> -->
+    </div>
+  </div> 
+  
+
+

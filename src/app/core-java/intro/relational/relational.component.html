@@ -1,0 +1,79 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Relational Operators</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <pre>
+Relational operators are used to perform comparision operations like equals, graterthan, lessthan and not equal on variables and data.
+If consider A = 22 and B = 60.
+            </pre>
+
+            <img src="assets/img/intro/relational.JPG"/>
+              
+            </div>
+          </div>
+        </div>
+       
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/intro/relprogram.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'RelationalOperators.mp4'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  
+

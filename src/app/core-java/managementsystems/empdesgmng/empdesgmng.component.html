@@ -1,0 +1,84 @@
+<div>
+  <div class="card card-body">
+    <!--<p>   another collapse start here </p>-->
+    <h3>Employee - Designation (One to One Relation)</h3>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement"
+              aria-expanded="true" aria-controls="ProblemStatement">
+              Employee - Designation (One Employee have one Designation)
+            </button>
+          </h5>
+        </div>
+
+        <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+          <div class="card-body">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of the problem statement-->
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program"
+            aria-expanded="false" aria-controls="Program">
+            Program
+          </button>
+        </h5>
+      </div>
+      <div id="Program" class="collapse" aria-labelledby="headingThree">
+        <div class="card-body">
+          <div class="tab-title tab-slide-effect">
+            <span class="tab-pill" id="pojo" [ngClass]="(elementId=='pojo')?'active':''"
+              (click)="tabChange($event)" data-hover="POJO(Model) Classes">POJO(Model) Classes</span>
+            <span class="tab-pill" id="helper" [ngClass]="(elementId=='helper')?'active':''"
+              (click)="tabChange($event)" data-hover="Helper Classes">Helper Classes</span>
+            <span class="tab-pill" id="main" [ngClass]="(elementId=='main')?'active':''"
+              (click)="tabChange($event)" data-hover="Main(Testing) Class">Main(Testing) Class</span>
+          </div>
+          <div class="card-group" *ngIf="elementId=='pojo'">
+            <div class="card">
+              <h5 class="text-center card-title animate-charcter">Employee POJO Class</h5>
+              <div class="card-body">
+                <img class="card-img-top" src="assets/img/managment/" alt="">
+              </div>
+            </div>
+            <div class="card">
+              <h5 class="text-center card-title animate-charcter">Designation POJO Class</h5>
+              <div class="card-body">
+                <img class="card-img-top" src="assets/img/managment/" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card-group" *ngIf="elementId=='helper'">
+            <div class="card">
+              <h5 class="text-center card-title animate-charcter">Employee Helper Class</h5>
+              <div class="card-body">
+                <img class="card-img-top" src="assets/img/managment/" alt="">
+              </div>
+            </div>
+            <div class="card">
+              <h5 class="text-center card-title animate-charcter">Designation Helper Class</h5>
+              <div class="card-body">
+                <img class="card-img-top" src="assets/img/managment/" alt="">
+              </div>
+            </div>
+          </div>
+          <div *ngIf="elementId=='main'">
+            <img class="card-img-top" src="assets/img/managment/" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--end of pragram-->
+  </div>
+</div>
+
+

@@ -1,0 +1,138 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Each Number Count in Array</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <pre>
+We need to print the number of occurrences of each number in the array.
+
+INPUT:
+size -- 6
+enter values 
+2 4 2 5 6 4
+
+OUTPUT:
+2 occurs two times
+4 occurs two times
+5 occurs one times
+6 occurs one times
+                      </pre>
+                      
+                  </div>
+                </div>
+
+                <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}2, 4, 2, 5, 6, 4, 4{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">2 occurs 2 times</p>
+                      <p class="card-text">4 occurs 3 times</p>
+                      <p class="card-text">5 occurs 1 time</p>
+                      <p class="card-text">6 occurs 1 time</p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}15, 22, 15, 29, 22, 29{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">15 occurs 2 times</p>
+                      <p class="card-text">22 occurs 2 times</p>
+                      <p class="card-text">29 occurs 2 times</p>
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}71, 71, 22, 22, 22, 22, 22, 85{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">71 occurs 2 times</p>
+                      <p class="card-text">22 occurs 5 times</p>
+                      <p class="card-text">85 occurs 1 time</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>     
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/arrays/occur.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'11OccurenceOfNumbers.mp4'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<div id="mentor" class="carousel slide" data-bs-ride="carousel" data-bs-interval="20000">
+  <div class="carousel-inner" data-aos="fade-up"  data-aos-offset="100"
+                                                    data-aos-delay="50000"
+                                                    data-aos-duration="60000">
+    <div class="carousel-item" *ngFor="let item of mentorSectionsData.mentorSections; let i = index" [ngClass]="(i==0)?'active':''"  >
+      <div class="mentor-section mentor-grid">
+        <div class="mentor-item diplay-flex kenburns-top" *ngFor="let itemRow of item.row">
+          <div class="mentor-img-section">
+            <img [src]="itemRow.profileImg" alt="">
+          </div>
+          <div class="mentor-desc-section">
+            <h6 class="mentor-desc">
+              {{itemRow.description}}
+            </h6>
+            <h4> - {{itemRow.name}} 
+              <ng-container *ngIf="itemRow.role && itemRow.company">
+                ( {{itemRow.role}} in {{itemRow.company}})
+              </ng-container>
+              <ng-container *ngIf="itemRow.role && !itemRow.company">
+                ( {{itemRow.role}} )
+              </ng-container>
+              <ng-container *ngIf="!itemRow.role && itemRow.company">
+                ( {{itemRow.company}} )
+              </ng-container>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-group">
+    <button type="button" data-bs-target="#mentor" data-bs-slide="prev">PREV</button>
+    <button type="button" data-bs-target="#mentor" data-bs-slide="next">NEXT</button>
+  </div>
+</div>

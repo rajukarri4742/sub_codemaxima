@@ -1,0 +1,203 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Matrix Multiplication</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+We need to find multiplication of two matrices.If both the matrices are in the same order then only multiplication of two matrices is possible.<br>
+
+Example: 2X2 matrix<br>
+                                 
+matrix A = 1   1   4   2 <br>             
+                         
+matrix B = 6   1   2   5 <br>                
+                         
+matrix C = 1*6   1*1   4*2   2*5  =  6  1  8  10<br>
+            
+                    </p>
+                    
+                  </div>
+                </div>
+
+                <!-- Starting of examples-->
+                <div class="card-group">
+                    <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                      <div class="card-header text-center"><b>Example - 1</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p class="card-text">Enter number of rows</p>
+                        <p style="margin-top: -20px;" class="card-text">2</p>
+                        <p class="card-text">Enter number of columns</p>
+                        <p style="margin-top: -20px;" class="card-text">2</p>
+                        <p class="card-text">Enter elements of matrix A</p>
+                        <p style="margin-top: -20px;" class="card-text">1  2  3  4</p>
+                        <p class="card-text">Enter elements of matrix B</p>
+                        <p style="margin-top: -20px;" class="card-text">5  6  7  8</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">Multiplication of two matrices is</p>
+                        <p style="margin-top: -20px;" class="card-text">5  12  21  32</p>
+                      </div>
+                    </div>
+  
+                    <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                      <div class="card-header text-center "><b>Example - 2</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p class="card-text">Enter number of rows</p>
+                        <p style="margin-top: -20px;" class="card-text">2</p>
+                        <p class="card-text">Enter number of columns</p>
+                        <p style="margin-top: -20px;" class="card-text">2</p>
+                        <p class="card-text">Enter elements of matrix A</p>
+                        <p style="margin-top: -20px;" class="card-text">3  5  1  0</p>
+                        <p class="card-text">Enter elements of matrix B</p>
+                        <p style="margin-top: -20px;" class="card-text">6  3  1  1</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">Multiplication of two matrices is</p>
+                        <p style="margin-top: -20px;" class="card-text">18  15  1  0</p>
+                      </div>
+                    </div>
+  
+                    <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                      <div class="card-header text-center"><b>Example - 3</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p class="card-text">Enter number of rows</p>
+                        <p style="margin-top: -20px;" class="card-text">3</p>
+                        <p class="card-text">Enter number of columns</p>
+                        <p style="margin-top: -20px;" class="card-text">3</p>
+                        <p class="card-text">Enter elements of matrix A</p>
+                        <p style="margin-top: -20px;" class="card-text">9  2  3  1  9  2  3  1  1</p>
+                        <p class="card-text">Enter elements of matrix B</p>
+                        <p style="margin-top: -20px;" class="card-text">0  0  0  0  0  0  0  0  0</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">Multiplication of two matrices is</p>
+                        <p style="margin-top: -20px;" class="card-text">9  2  3  1  9  2  3  1  1</p>
+                      </div>
+                    </div>
+                  </div> <!-- Ending of examples-->
+              </div>
+            </div><!-- Ending of problem statement card body-->
+          </div>
+        </div> <!-- Ending of problem statement-->
+       
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]=""></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#testcases" aria-expanded="false" aria-controls="InputOutput">
+                Test Cases
+              </button>
+            </h5>
+          </div>
+          <div id="testcases" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+
+                <div class="card-group">
+                    <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                      <div class="card-header text-center"><b>Testcase - 1</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p  class="card-text">2</p>
+                        <p style="margin-top: -20px;" class="card-text">2</p>
+                        <p style="margin-top: -20px;" class="card-text">1  2  3  4</p>
+                        <p style="margin-top: -20px;" class="card-text">5  6  7  8</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">5  12  21  32</p>
+                      </div>
+                    </div>
+  
+                    <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                      <div class="card-header text-center "><b>Testcase - 2</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p  class="card-text">2</p>
+                        <p style="margin-top: -20px;" class="card-text">2</p>
+                        <p style="margin-top: -20px;" class="card-text">3  5  1  0</p>
+                        <p style="margin-top: -20px;" class="card-text">6  3  1  1</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">18  15  1  0</p>
+                      </div>
+                    </div>
+  
+                    <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                      <div class="card-header text-center"><b>Testcase - 3</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p  class="card-text">3</p>
+                        <p style="margin-top: -20px;" class="card-text">3</p>
+                        <p style="margin-top: -20px;" class="card-text">9  2  3  1  9  2  3  1  1</p>
+                        <p style="margin-top: -20px;" class="card-text">0  0  0  0  0  0  0  0  0</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">9  2  3  1  9  2  3  1  1</p>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  

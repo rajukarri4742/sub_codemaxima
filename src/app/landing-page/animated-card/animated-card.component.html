@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="white-card" data-aos="fade-up"  data-aos-offset="150"
+        data-aos-delay="50"
+        data-aos-duration="3000">
+    <div class="white-card-content text-align-center">
+      <img src="assets/img/hero-img-1.png" [ngClass]="(selectedText==text1.textContent)?'':'display-none'" class="img-fluid animated" alt="coding maxima" style="width: 360px;">
+      <img src="assets/img/home/evenodd.gif" [ngClass]="(selectedText==text2.textContent)?'':'display-none'" class="img-fluid animated" alt="coding maxima" style="width: 360px;">
+      <img src="assets/img/home/handson.jpg" [ngClass]="(selectedText==text3.textContent)?'':'display-none'" class="img-fluid animated" alt="coding maxima" style="width: 360px;">
+      <img src="assets/img/hero-img-2.png" [ngClass]="(selectedText==text4.textContent)?'':'display-none'" class="img-fluid animated" alt="coding maxima" style="width: 360px;">
+      <img src="assets/img/home/codereview.jpg" [ngClass]="(selectedText==text5.textContent)?'':'display-none'" class="img-fluid animated" alt="coding maxima" style="height:320px; width: 360px;">
+      <img src="assets/img/home/oneonone.jpg" [ngClass]="(selectedText==text6.textContent)?'':'display-none'" class="img-fluid animated" alt="coding maxima" style="height:320px; width: 360px;">
+    </div>
+    <div class="white-card-content content-wrapper">
+      <div class="white-card-content-item " [ngClass]="(selectedText==text1.textContent)?'active':''">
+        <i class="fa fa-bug" [ngClass]="(selectedText==text1.textContent)?'active':''"></i><span (click)="onSelectedText(text1.textContent,0)" #text1>Learn Coding from Top Developers.</span>
+      </div>
+      <div class="white-card-content-item" [ngClass]="(selectedText==text2.textContent)?'active':''">
+        <i class="fa fa-cubes" [ngClass]="(selectedText==text2.textContent)?'active':''"></i><span (click)="onSelectedText(text2.textContent,1)" #text2>Learn Code Debugging with animation videos</span>
+      </div>
+      <div class="white-card-content-item" [ngClass]="(selectedText==text3.textContent)?'active':''">
+        <i class="fa fa-cube" [ngClass]="(selectedText==text3.textContent)?'active':''"></i><span (click)="onSelectedText(text3.textContent,2)" #text3>Learn in live hands on classrooms</span>
+      </div>
+      <div class="white-card-content-item" [ngClass]="(selectedText==text4.textContent)?'active':''">
+        <i class="fa fa-code" [ngClass]="(selectedText==text4.textContent)?'active':''"></i><span (click)="onSelectedText(text4.textContent,3)" #text4>Structured, flexible curriculum</span>
+      </div>
+      <div class="white-card-content-item" [ngClass]="(selectedText==text5.textContent)?'active':''">
+        <i class="fa fa-gears" [ngClass]="(selectedText==text5.textContent)?'active':''"></i><span (click)="onSelectedText(text5.textContent,4)" #text5>Weekly Code Reviews and live mentoring</span>
+      </div>
+      <div class="white-card-content-item" [ngClass]="(selectedText==text6.textContent)?'active':''">
+        <i class="fa fa-sitemap" [ngClass]="(selectedText==text6.textContent)?'active':''"></i><span (click)="onSelectedText(text6.textContent,5)" #text6>Inerview training and one on one sessions</span>
+      </div>
+    </div>
+</div>
+</div>

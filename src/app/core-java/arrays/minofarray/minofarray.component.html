@@ -1,0 +1,150 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Minimum Value of Array</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <pre>
+We need to find the minimum number in an array.
+Consider the below steps for better understanding that how we can find the Minimum number.
+
+Example: int arr[] = {{ '{' }}1,4,2,5,7{{ '}' }}
+
+Step 1: we can take the first element in an array and assigned it to an variable min i.e min = arr[0] = 1, 
+        then we can compare 1 with remaining elements in the array.
+
+        1 < 4 (first element is comparing with second element)
+        true
+
+        Here, 1 is less than 4 so we will change the value in min to 1. So, min = 1.
+
+Step 2: compare the value in min i.e 1 with the next element in an array i.e 2.
+
+        1 < 2 -----> true 
+
+        Here, 1 is less than 2 is correct. So no need of changing the min value because it is the least number till now.
+        min = 1.
+
+Step 3: compare the value in min value i.e 1 with the next element in an array i.e 5.
+
+        1 < 5 -----> true
+
+        Here, 1 is less than 5 is correct. So no need of changing the min value because it is the least number till now.
+        min = 1.
+
+Step 4: compare the value in min i.e 1 with the next element in an array i.e 7.
+
+        1 < 7 -----> true
+
+        Here, 1 is less than 7 so we will change the value in min to 1. So, min = 1.		
+        So, this is the end of an array and we found the number in min is 1. So print the minimum number in the array is 1.
+                      </pre>
+                      
+                  </div>
+                </div>
+
+                <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}4, 2, -15, 7, 1, -2, -10{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Minimum value in the array is: -15</p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}11, 13, 45, 22, 65{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Minimum value in the array is: 11</p>
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}24, 22, 56, 22, 22{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Minimum value in the array is: 22</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>     
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/arrays/min.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'05MinimumNumber.mp4'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  
+
+
+
+

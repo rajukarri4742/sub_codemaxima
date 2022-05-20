@@ -1,0 +1,140 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Find Key Positions in Array</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <pre>
+In this example we can find in which positions key present in array.
+for example if the array size is 5 then index starts from 0 and ends with 4 based on those indexes, we can print the positions where the number 5 was present.
+
+Eg: int arr[5];
+
+  int arr[0] = 1; 
+  int arr[1] = 3; 
+  int arr[2] = 5; 
+  int arr[3] = 5; 
+  int arr[4] = 7; 
+
+output: The number 5 is present in 2 and 3 positions in an array.
+The actual output is number 5 is present in 3 and 4 positions in an array. 
+But indexes are 2 and 3. So increase the index values by 1(when printing).
+
+        first index = 2
+        first index + 1 =  2 +1 = 3
+        second index = 3
+        second index + 1 = 3 +1 = 4
+
+finally, the output will be 5 is present in 3 and 4 positions in an array.
+                      </pre>
+                      
+                  </div>
+                </div>
+
+                <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}1, 3, 5, 5, 7{{ '}' }}</p>
+                      <p style="margin-top: -20px;" class="card-text">Key = 5</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Key '5' found in positions :- 3 4</p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}11, 13, 85, 22, 65{{ '}' }}</p>
+                      <p style="margin-top: -20px;" class="card-text">Key = 85</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Key '85' found in positions :- 3</p>
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}24, 22, 85, 22, 22{{ '}' }}</p>
+                      <p style="margin-top: -20px;" class="card-text">Key = 22</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Key '22' found in positions :- 2 4 5</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>     
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/arrays/keypositions.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'03FindKeyPositions.mp4'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  
+
+
+

@@ -1,0 +1,202 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Find String in an ArrayList</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                        We need to find if a string exists in an arraylist or not. 
+                        we need to compare every string in an arraylist with the string which we want to find.
+                        if we get matched with the string in an array then we can print like string found otherwise print string not found.
+                    </p>
+                    
+                  </div>
+                </div>
+
+                 <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter size of an arraylist</p>
+                      <p style="margin-top: -20px;" class="card-text">5</p>
+                      <p class="card-text">Enter elements of an arraylist</p>
+                      <p style="margin-top: -20px;" class="card-text">coding</p>
+                      <p style="margin-top: -20px;" class="card-text">maxima</p>
+                      <p style="margin-top: -20px;" class="card-text">student</p>
+                      <p style="margin-top: -20px;" class="card-text">learning</p>
+                      <p style="margin-top: -20px;" class="card-text">success</p>
+                      <p class="card-text">Enter a string</p>
+                      <p style="margin-top: -20px;" class="card-text">success</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">string success is found in the arraylist</p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter size of an arraylist</p>
+                      <p style="margin-top: -20px;" class="card-text">3</p>
+                      <p class="card-text">Enter elements of an arraylist</p>
+                      <p style="margin-top: -20px;" class="card-text">january</p>
+                      <p style="margin-top: -20px;" class="card-text">october</p>
+                      <p style="margin-top: -20px;" class="card-text">november</p>
+                      <p class="card-text">Enter a string</p>
+                      <p style="margin-top: -20px;" class="card-text">august</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">string august is not found in the arraylist</p>
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p class="card-text">Enter size of an arraylist</p>
+                      <p style="margin-top: -20px;" class="card-text">4</p>
+                      <p class="card-text">Enter elements of an arraylist</p>
+                      <p style="margin-top: -20px;" class="card-text">high</p>
+                      <p style="margin-top: -20px;" class="card-text">medium</p>
+                      <p style="margin-top: -20px;" class="card-text">low</p>
+                      <p style="margin-top: -20px;" class="card-text">cheers</p>
+                      <p class="card-text">Enter a string</p>
+                      <p style="margin-top: -20px;" class="card-text">cheers</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">string cheers is found in the arraylist</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>
+            </div><!-- Ending of problem statement card body-->
+          </div>
+        </div> <!-- Ending of problem statement-->
+       
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]=""></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#testcases" aria-expanded="false" aria-controls="InputOutput">
+                Test Cases
+              </button>
+            </h5>
+          </div>
+          <div id="testcases" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+
+                <div class="card-group">
+                    <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                      <div class="card-header text-center"><b>Test case - 1</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p  class="card-text">5</p>
+                        <p style="margin-top: -20px;" class="card-text">coding</p>
+                        <p style="margin-top: -20px;" class="card-text">maxima</p>
+                        <p style="margin-top: -20px;" class="card-text">student</p>
+                        <p style="margin-top: -20px;" class="card-text">learning</p>
+                        <p style="margin-top: -20px;" class="card-text">success</p>
+                        <p style="margin-top: -20px;" class="card-text">success</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">found</p>
+                      </div>
+                    </div>
+  
+                    <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                      <div class="card-header text-center "><b>Testcase - 2</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p class="card-text">3</p>
+                        <p style="margin-top: -20px;" class="card-text">january</p>
+                        <p style="margin-top: -20px;" class="card-text">october</p>
+                        <p style="margin-top: -20px;" class="card-text">november</p>
+                        <p style="margin-top: -20px;" class="card-text">august</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">Not found</p>
+                      </div>
+                    </div>
+  
+                    <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                      <div class="card-header text-center"><b>Testcase - 3</b></div>
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                        <p class="card-text">4</p>
+                        <p style="margin-top: -20px;" class="card-text">high</p>
+                        <p style="margin-top: -20px;" class="card-text">medium</p>
+                        <p style="margin-top: -20px;" class="card-text">low</p>
+                        <p style="margin-top: -20px;" class="card-text">cheers</p>
+                        <p style="margin-top: -20px;" class="card-text">cheers</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                        <p class="card-text">found</p>
+                      </div>
+                    </div>
+                  </div> <!-- Ending of examples-->
+                
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  

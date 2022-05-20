@@ -1,0 +1,155 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Count Number of Prime Numbers in Array</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <pre>
+We need to print the number of prime numbers present in the array.
+
+int arr[] = {{ '{' }}2,5,3,4,8{{ '}' }} and take variable count= 0;
+
+Step 1: firstly, we can take the first element i.e 2
+        we need to find whether the number 2 is prime or not.if it is prime then increase the count by 1.
+        (Prime logic)
+        2 ---> prime
+        So, count = 1.
+
+Step 2: we can take the next element i.e 5
+        we need to find whether the number 5 is prime or not.if it is prime then increase the count by 1.
+        (Prime logic)
+        5 ---> prime
+        So, count = 2.
+
+Step 3: we can take the next element i.e 3
+        we need to find whether the number 3 is prime or not.if it is prime then increase the count by 1.
+        (Prime logic)
+        3 ---> prime
+        So, count = 3.
+
+Step 4: we can take the next element i.e 4
+        we need to find whether the number 5 is prime or not.if it is prime then increase the count by 1.
+        (Prime logic)
+        4 ---> not prime
+        So, count remains the same as 4 is not a prime number.
+        Count = 3.
+
+Step 5: we can take the next element i.e 8
+        we need to find whether the number 8 is prime or not.if it is prime then increase the count by 1.
+        (Prime logic)
+        8 ---> not prime
+        So, count remains the same as 8 is not a prime number.
+        Count = 3.
+
+        So, the number of primes in the array is 3.
+
+                      </pre>
+                      
+                  </div>
+                </div>
+
+                <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}1, 6, 14, 85, 17{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">The number of prime numbers in the array- 2</p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}15, 23, 45, 29, 43{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">The number of prime numbers in the array- 3</p>
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Array = {{ '{' }}71, 73, 26, 89, 97{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">The number of prime numbers in the array- 4</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>     
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/arrays/primecount.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'08PrimeCount.mp4'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  
+
+
+
+

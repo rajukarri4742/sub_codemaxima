@@ -1,0 +1,60 @@
+<div class="main">
+  <nav class="row navbar navbar-expand-lg navbar-light bg-white border-bottom padding-top-bottom-16">
+    <div class="col-sm-auto">
+      <button class="menu-button-toggle fa fa-bars" id="menu-toggle" [class.visibility-hidden]="!showBody" (click)="onToggleSideBar()"></button>
+    </div>
+    <ul class="navbar-nav justify-content-center">
+      <li *ngFor="let course of coursesList" class="nav-item">
+        <a class="second-nav-links" (click)="loadChapters(course)" [ngClass]="(selectedCourse==course)?'active':''">{{course}}</a>
+      </li>
+    </ul>
+  </nav>
+  <app-courses-navbar 
+    [coursesList]="coursesList"
+    [showCoursesNavBar]="userDashBoardShow"
+    [userInfo]="loginUserInfo"
+    (toggleSideBarEvent)="onToggleSideBar()"
+    (loadChaptersEvent)="loadChapters($event)"
+    (loggedInEvent)="getRegisteredCourses($event)">
+  </app-courses-navbar>
+  <div *ngIf="showBody" class="d-flex" [class.toggled]="toggleSideBar" id="wrapper" data-aos="fade-up"  data-aos-offset="100"
+        data-aos-delay="50"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1000">
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="list-group list-group-flush" *ngIf="!isUserDashboard">
+        <button class="btn btn-light nav-link" 
+                style="margin-top:5px"
+                *ngFor="let chapter of chapters" 
+                (click)="loadLessonNames(chapter)" 
+                [ngStyle]="{'background-color':(selectedChapter==chapter.name)?'#1030B6':'#EFEFEF'}" 
+                [style.color]="(selectedChapter==chapter.name)?'#ffffff':'#000000'">
+          {{chapter.name}}
+        </button>
+      </div>
+      <div class="list-group list-group-flush" *ngIf="isUserDashboard">
+        <button class="btn btn-light nav-link" 
+                style="margin-top:5px"
+                *ngFor="let course of coursesList">
+          {{course}}
+        </button>
+      </div>
+    </div>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <p>
+            <button style="margin-right:5px;margin-top:5px" 
+                    type="button" *ngFor="let lesson of lessons" 
+                    (click)="loadLesson(lesson)" 
+                    [ngClass]="(selectedLesson==lesson.name)?'btn-sm btn-primary m-l-5':'btn-sm btn-light m-l-5'" 
+                    aria-controls="collapseExample">
+              {{lesson.name}}
+            </button>
+          </p>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

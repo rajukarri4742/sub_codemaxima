@@ -1,0 +1,130 @@
+.carousel-indicators [data-bs-target]{
+    background-color: #000000;
+}
+.carousel-item{
+    .row-wrapper{
+        margin: 1rem 2.3rem 0rem 2.3rem;
+    }
+}
+.carousel-group{
+  text-align: center;
+  button{
+    color: #000000;
+    border: 2px solid #000000;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+    margin: 9px;
+    padding: 5px 40px;
+    font-size: 20px;
+    &:hover{
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        background-color: #000000;
+        border-radius: 5px;
+    }
+  }
+}
+.testimonial-wrap{
+    padding-top: 5rem;
+    padding-left: 1.6rem;
+    padding-bottom: 3rem;
+    .testimonial-item{
+        border-radius: 6px;
+        background-color: #ffffff;
+        box-shadow: 4px 6px 6px -6px rgba(51, 1, 1, 0.52);
+        font-weight: 500;
+        .social-media-icon{
+            margin-right: 15px;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .linkedin{
+            color: #0082ca;
+        }
+        .github{
+            color: #333333;
+        }
+    }
+    .candidate-name{
+        background: linear-gradient(#6f7df7,#324153);
+        .testimonial-img{
+            position: relative;
+            margin-top: -14px;
+            margin-left: -21px;
+            overflow: initial;
+            width: 100px;
+            border-radius: 50px;
+            border: 2px solid #e8e8e8;
+            height: 100px;
+        }
+        .name-and-job{
+            padding: 1rem;
+            font-size: 20px;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+    }
+    .testimonial-comment{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: justify;
+        font-size: 13px;
+        margin-top: -20px;
+        text-indent: 1cm;
+    }
+}
+.display-flex{
+    display: flex;
+}
+.carousel-control-prev , .carousel-control-next{
+    filter: invert(100%);
+    width: 3%;
+}
+
+
+//for backgroud section text animation
+.title-word {
+  animation: color-animation 5s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #041464;
+  --color-2: #fd0404;
+  --color-3: #008907;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.title {
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+}

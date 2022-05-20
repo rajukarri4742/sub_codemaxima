@@ -1,0 +1,130 @@
+<div>
+  <div class="card card-body">
+    <!--<p>   another collapse start here </p>-->
+    <h3>Loops(Flow/Iteration) Statements</h3>
+    <div id="accordion">
+      <div class="tab-title tab-slide-effect">
+        <span class="tab-pill" id="for-loop" [ngClass]="(elementId=='for-loop')?'active':''"
+          (click)="tabChange($event)" data-hover="for loop">for loop</span>
+        <span class="tab-pill" id="while-loop" [ngClass]="(elementId=='while-loop')?'active':''"
+          (click)="tabChange($event)" data-hover="while loop">while loop</span>
+        <span class="tab-pill" id="do-while-loop" [ngClass]="(elementId=='do-while-loop')?'active':''"
+          (click)="tabChange($event)" data-hover="do-while loop">do-while loop</span>
+      </div>
+
+      <div *ngIf="elementId=='for-loop'">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#forloop" aria-expanded="false"
+                aria-controls="ProblemStatement">
+                for loop
+              </button>
+            </h5>
+          </div>
+
+          <div id="forloop" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <p>The for loop has three parts Initilization-Condition-Operation(Increment/Decrement).</p>
+              <p>Example : </p>
+              <img src="assets/img/intro/forloop.JPG" />
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'IfCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="elementId=='while-loop'">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#whileloop"
+                aria-expanded="false" aria-controls="Program">
+                while loop
+              </button>
+            </h5>
+          </div>
+          <div id="whileloop" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <p>The while loop only has condition. This loop will repeats util condition is false</p>
+              <p>Example :- </p>
+              <img src="assets/img/intro/whileloop.JPG" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'IfCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="elementId=='do-while-loop'">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#do-while"
+                aria-expanded="false" aria-controls="Program">
+                do-while loop
+              </button>
+            </h5>
+          </div>
+          <div id="do-while" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+
+              <p>The do-while execute the block then it checks the condition.</p>
+              <p>Example :- </p>
+              <img src="assets/img/intro/do-while.JPG" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo"
+                aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'IfCondition.m4v'"></app-video-cmp>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br />
+  </div>
+</div>

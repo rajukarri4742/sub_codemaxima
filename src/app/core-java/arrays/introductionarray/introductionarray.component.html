@@ -1,0 +1,76 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Arrays Introduction</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+               Introduction
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <pre>
+
+Array :- Collection of similar type of data value.
+
+Arrays are used when there is a need to use many variables of the same type as a list. 
+It can be defined as a sequence of objects which are of the same data type. 
+It is used to store a collection of data and it is more useful to think of an array as a collection of variables of the same type.
+
+For example:
+
+int a = 1;
+int b = 12;
+int c = 21;
+int d = 17;
+
+//using arrays
+int numbers[3] ={{ '{' }}1, 2, 3, 4{{ '}' }};
+
+By using array you can store a multiple data in single variable. Like mention in above snipet.
+
+It will increase code readability and we can easily access the data from array using array index. Note array index is start from 0
+
+This is all about arrays.
+
+Next we can learn about reading of an array.We have two ways to read an array 
+
+1- static 
+
+2- dynamic 
+
+Java does not provide any direct way to take array input. But we can take array input by using the method of the Scanner class. 
+To take input of an array, we must ask the user about the length of the array. 
+After that, we use a Java for loop to take the input from the user and the same for loop is also used for retrieving the elements from the array. 
+ 
+1-Static: 
+
+Static arrays have their size or length determined when the array is created or allocated. 
+For this reason, they may also be referred to as fixed-length arrays or fixed arrays.
+
+static data assignment -> declares an array with size of 5(type int)
+
+        int myIntArray1[5] = {{ '{' }}1, 3, 4, 5, 10{{ '}' }};
+
+In this declaration, we know the exact values that should go in the list. 
+On the right hand side we have a pair of curly braces with each of the value of the array separated by commas and in the order that we want them to appear in the list.
+            </pre>   
+            <img src="assets/img/arrays/static.jpg" alt=""/>
+            <pre>
+dynamic data assignment is reading the array values from the user input.
+When we declare the array with the size all values in the array will by default initilizing with zero for integers.
+            </pre>
+            <img src="assets/img/arrays/dynamic.jpg" alt=""/>
+            <img src="assets/img/arrays/read.JPG" alt=""/>
+            <img src="assets/img/arrays/output.JPG" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>           
+</div>

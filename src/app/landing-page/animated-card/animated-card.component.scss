@@ -1,0 +1,115 @@
+.white-card{
+    padding: 1rem 0rem 1rem 0.5rem;
+    margin: 5% 5% 2% 5%;
+    font-size: 20px;
+    -webkit-box-shadow: -1px -2px 7px 0px rgba(0,0,0,1);
+    -moz-box-shadow: -1px -2px 7px 0px rgba(0,0,0,1);
+    box-shadow: -1px -2px 7px 0px rgba(0,0,0,1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 5s ease-in;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .white-card-content{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+.white-card-content-item{
+    font-weight: 600;
+    font-size: 13px;
+    padding: 4px 0px;
+    position: relative;
+    color: #000000;
+    span{
+        cursor: pointer;
+    }
+    i{
+        font-size: 15px;
+        border-radius: 54px;
+        justify-content: center;
+        align-items: center;
+        color: #0178d8;
+        text-align: center;
+        padding: 14px;
+        background-color: #e8f3fc;
+        margin-right: 34px;
+        height: calc(100% - 4rem);
+        &.active{
+            font-size: 20px;
+        }
+    }
+}
+/* this class is for single line in the icons */
+.content-wrapper::before{
+    content: '';
+    position: absolute;
+    width: 0.1rem;
+    background: #5a6273;
+    height: calc(100% - 4rem);
+    top: 2rem;
+    left: 1.35rem;
+    opacity: 0.4;
+}
+.display-none{
+    display: none;
+}
+.text-align-center{
+    text-align: center;
+}
+.active{
+    font-size: 20px;
+}
+@media (min-width: 1400px){
+    .container {
+        max-width: 1062px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1062px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        max-width: 1062px;
+    }
+}
+
+// If [device width] is less than or equal to 1024px,
+@media only screen and (max-width: 1034px)  {
+    .active{
+        font-size: 18px;
+    }
+}
+// If [device width] is less than or equal to 768px,
+@media only screen and (max-width: 768px)  {
+    .white-card-content{
+        img{
+            display: none;
+        }
+        margin-left:15px;
+    }
+}
+// If [device width] is less than or equal to 500px,
+@media only screen and (max-width: 500px)  {
+    .white-card-content-item{
+        font-size: 10px;
+        i{
+            font-size: 12px;
+            margin-right: 10px;
+            &.active{
+                font-size: 15px;
+            }
+        }
+    }
+    
+}

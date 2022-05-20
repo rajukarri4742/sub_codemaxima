@@ -1,0 +1,142 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Each Number Occurrence</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <pre>
+
+Program to find number of occurrence of each number in the array using Hashmap.
+
+Example :
+
+If we have an array int array[] = {{ '{' }}1,2,3,2,2{{ '}' }} and the first number is 1 then the number of occurrence of number is 1 and 
+and the next number is 2 so the number of occurrence of number 2 is 3.
+In the same way, we need to print the number of occurrence of every element in an array.
+
+Sample 1 :
+Array = {{ '{' }}1,2,3,2,2{{ '}' }}
+output : 
+The number of occurrence of number 1 is 1
+The number of occurrence of number 2 is 3
+The number of occurrence of number 3 is 1
+
+Sample 2 :
+Array = {{ '{' }}11,23,32,32,23{{ '}' }}
+output : 
+The number of occurrence of number 11 is 1
+The number of occurrence of number 23 is 2
+The number of occurrence of number 32 is 2
+
+
+                      </pre>
+                      
+                  </div>
+                </div>
+
+                <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">array = {{ '{' }}1,2,3,2,2{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">The number of occurence of a number 1 is 1<br>
+                                           The number of occurence of a number 2 is 3<br>
+                                           The number of occurence of a number 3 is 1<br></p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">array = {{ '{' }}11,5,12,12,5,5,5{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">The number of occurence of a number 11 is 1<br>
+                                           The number of occurence of a number 12 is 2<br>
+                                           The number of occurence of a number 5 is 4<br></p>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">array = {{ '{' }}22,22,85,85,85{{ '}' }}</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">The number of occurence of a number 22 is 2<br>
+                                           The number of occurence of a number 85 is 3</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>     
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/hashmap/NumberOccurence.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-cmp [url]="'01NumberOccurance.m4v'"></app-video-cmp>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div> 
+  

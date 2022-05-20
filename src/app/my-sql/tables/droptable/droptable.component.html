@@ -1,0 +1,99 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>DROP Statement</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                DROP Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                        The DROP TABLE statement is used to drop an existing table in a database.
+                    </p>
+                    <p>
+                        The DROP COLUMN command is used to delete a column in an existing table.
+                    </p>
+                    <p>
+                        The DROP CONSTRAINT command is used to delete a UNIQUE, PRIMARY KEY, FOREIGN KEY, or CHECK constraint.
+                    </p>
+                    <p>
+                        The DROP DATABASE command is used to delete an existing SQL database.
+                    </p>
+                    <p>
+                        The DROP DEFAULT command is used to delete a DEFAULT constraint.
+                    </p>
+                    <p>
+                        The DROP INDEX command is used to delete an index in a table.
+                    </p>
+                    <p>
+                        The DROP VIEW command deletes a view.
+                    </p>
+                    
+                    <pre>
+
+                      Syntax : DROP TABLE table_name;
+                                      
+                      E.g.: - DROP TABLE CUSTOMERS;
+
+                    QUESION : DELETE the customer table.
+
+                    </pre>   
+                     <img class="img-center" src="assets/img/mySql/preData/TABLE1.JPG" alt="pattern" >
+                  </div>
+                </div>
+              </div>
+            </div><!-- Ending of problem statement card body-->
+          </div>
+        </div> <!-- Ending of problem statement-->
+       
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#testcases" aria-expanded="false" aria-controls="InputOutput">
+                QUERY 
+              </button>
+            </h5>
+          </div>
+          <div id="testcases" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+                <pre>
+            DROP TABLE CUSTOMERS;
+                </pre>    
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#result" aria-expanded="false" aria-controls="InputOutput">
+                  Result Table
+                </button>
+              </h5>
+            </div>
+            <div id="result" class="collapse" aria-labelledby="headingTwo">
+              <div class="card-body">
+                <img class="img-center" src="assets/img/mySql/select/empTable1.JPG" alt="pattern" >  
+              </div>
+            </div>
+          </div>
+      </div>
+      <br/>
+      <!--<p>   another collapse end here </p>-->
+      <!-- <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp> -->
+    </div>
+  </div> 
+  
+
+

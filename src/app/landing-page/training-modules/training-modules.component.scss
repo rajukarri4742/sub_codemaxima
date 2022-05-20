@@ -1,0 +1,204 @@
+$blue-title:#0077d8;
+$blue-background:#e8f3fc;
+$blue-p:#1974bef5;
+
+$violet-title:#b500d8;
+$violet-background:#f5e8fc;
+$violet-p:#8b19bef5;
+
+$red-title:#d80000;
+$red-background:#fce8e8;
+$red-p:#be1919f5;
+
+
+$green-title:#00d807;
+$green-background:#e8fce8;
+$green-p:#20be19f5;
+
+$yellow-title:#d8c700;
+$yellow-background:#fbfce8;
+$yellow-p:#beb719f5;
+
+$orange-title:#d86000;
+$orange-background:#fcf1e8;
+$orange-p:#be5019f5;
+
+$pink-title:#d80074;
+$pink-background:#fce8f4;
+$pink-p:#be1977f5;
+
+$light-green-title:#00d8be;
+$light-green-background:#e8fcf9;
+$light-green-p:#19beb0f5;
+
+
+
+.tab-title{
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  span{
+    padding: 10px 10px;
+    padding-top: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  .tab-pill {
+    background: linear-gradient( to right, rgb(171 182 255), rgb(255 255 255) ), 
+              linear-gradient( to right, #182dc2 -6.56%, #79a8cd 122.43% );
+    background-size: 94% 2px, 0px 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    padding: 15px 15px 10px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #282828;
+    &.active{
+      background-size: 0 2px, 100% 3px;
+      cursor: pointer;
+      color: #000000;
+    }
+  }
+}
+.content{
+    padding: 1.5rem 10px 3rem 10px;
+    .card-group{
+      justify-content: center;
+    }
+    .card-module{
+      padding: 0px;
+      padding-top: 10px;
+      max-width: 19rem;
+      margin-right: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+      &:nth-of-type(1){
+        .card-title{
+          background-color: $blue-background;
+          color: $blue-title;
+          p{
+            color: $blue-p;
+          }
+        }
+        .card-content{
+          i{
+            color: $blue-title;
+          }
+        }
+      }
+      &:nth-of-type(2){
+        .card-title{
+          background-color: $violet-background;
+          color: $violet-title;
+          p{
+            color: $violet-p;
+          }
+        }
+        .card-content{
+          i{
+            color: $violet-title;
+          }
+        }
+      }
+      &:nth-of-type(3){
+        .card-title{
+          background-color: $red-background;
+          color: $red-title;
+          p{
+            color: $red-p;
+          }
+        }
+        .card-content{
+          i{
+            color: $red-title;
+          }
+        }
+      }
+      &:nth-of-type(4){
+        .card-title{
+          background-color: $green-background;
+          color: $green-title;
+          p{
+            color: $green-p;
+          }
+        }
+        .card-content{
+          i{
+            color: $green-title;
+          }
+        }
+      }
+      &:nth-of-type(5){
+        .card-title{
+          background-color: $yellow-background;
+          color: $yellow-title;
+          p{
+            color: $yellow-p;
+          }
+        }
+        .card-content{
+          i{
+            color: $yellow-title;
+          }
+        }
+      }
+      .card-title{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 600;
+        p{
+          margin: 0px;
+          text-decoration: underline;
+          font-size: 12px;
+        }
+        h4{
+          font-weight: 600;
+          font-size: 1.45rem;
+          padding-top: 1rem;
+          padding-bottom: 0.78rem;
+        }
+        h6{
+          font-size: 14px;
+          padding: 8px 2rem;
+        }
+      }
+      .card-content{
+        padding: 25px 10px;
+        font-size: 14px;
+        li{
+            display: block;
+            padding: 5px 10px;
+        }
+        i{
+          padding-right: 6px;
+        }
+      }
+    }
+}
+
+/*animation fade-in*/
+.fade-in {
+	-webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/*animation fade-in*/
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

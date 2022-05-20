@@ -1,0 +1,92 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Trimorphic Number</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                      A number is called a trimorphic number if and only if the cubes of the given number end with the same number itself.
+                    </p>
+                    <p>
+                     
+For example:<br>  
+5, 24 are trimorphic numbers because their cubes are 125 and 13824, respectively and the last digits of the cubes represent the number itself.<br> 
+5 = 25*25 = 125 ----- last digit of the number is same as the number 5.<br> 
+So, 5 is a trimorphic number<br>  
+24 = 24*24*24= 13824-------------- last digit of the number is equal to the number 24.<br> 
+So, 24 is a trimorphic number.<br>
+                  </p>  
+                  </div>
+                </div>
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter n value</p>
+                      <p style="margin-top: -20px;" class="card-text">25</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">25 is a trimorphic number</p>
+                    </div>
+                  </div>
+        
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter n value</p>
+                      <p style="margin-top: -20px;" class="card-text">24</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">24 is a trimorphic number</p>
+                    </div>
+                  </div>
+        
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter n value</p>
+                      <p style="margin-top: -20px;" class="card-text">10</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">10 is not a trimorphic number</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              program
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div>

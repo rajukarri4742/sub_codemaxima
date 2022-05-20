@@ -1,0 +1,125 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Factorial of a number</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                      Factorial of a number is the product(multiplication) of all positive descending numbers.
+                    </p>
+                    <p>
+                     
+                      Factorial of a number (suppose take number as 4) is denoted by number! (that is 4!)<br>
+
+                      For example:<br> 
+                      4! = 4*3*2*1 = 24.<br>
+                      Here, 4! Means we can go through reverse order from 4 to 1 and<br>
+                      multiply all the numbers from number 4 to number 1.<br>
+                      i.e., 4*3*2*1<br>
+                      
+                      consider 15!<br> 
+                      15*14*13*12*11*10*9*8*7*6*5*4*3*2*1<br>
+                    
+                    </p>  
+                  </div>
+                </div>
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter a number</p>
+                      <p style="margin-top: -20px;" class="card-text">5</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">120</p>
+                    </div>
+                  </div>
+        
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter a number</p>
+                      <p style="margin-top: -20px;" class="card-text">4</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">24</p>
+                    </div>
+                  </div>
+        
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter a number</p>
+                      <p style="margin-top: -20px;" class="card-text">6</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">720</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/basic/factorial.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+              DebuggingVideo
+            </button>
+          </h5>
+        </div>
+        <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+          <div class="card-body">
+            <app-video-cmp [url]="'08Factorial.m4v'"></app-video-cmp>              
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+              Practice
+            </button>
+          </h5>
+        </div>
+        <div id="Practice" class="collapse" aria-labelledby="headingFive">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div>

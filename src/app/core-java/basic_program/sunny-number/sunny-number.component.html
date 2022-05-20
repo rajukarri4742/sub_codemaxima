@@ -1,0 +1,123 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Sunny Number</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                      A number N is called sunny number if the square root of the number N+1 is an integer number.  
+                    </p>
+                    <p>
+                     
+For Example<br>
+24 is a sunny number because 24+1 = 25 has a square root of 5 which is an integer.<br> 
+Procedure to develop method to check the given number is sunny number or not<br> 
+   1) Take a number<br> 
+   2) Add 1 in the given number<br> 
+   3) Find its square root value<br> 
+   4) If the square root is an integer, then the given number is a sunny number else the given number is not a sunny number.<br> 
+   If a number is completely divisible by 1 then the number is integer number,but if it leaves some remainder then it is not an integer number.<br>
+
+                  </p>  
+                  </div>
+                </div>
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter a number</p>
+                      <p style="margin-top: -20px;" class="card-text">24</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Given number is a sunny number</p>
+                    </div>
+                  </div>
+        
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter a number</p>
+                      <p style="margin-top: -20px;" class="card-text">33</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Given number is not a sunny number</p>
+                    </div>
+                  </div>
+        
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter a number</p>
+                      <p style="margin-top: -20px;" class="card-text">8</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">Given number is a sunny number</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/basic/sunny.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+              DebuggingVideo
+            </button>
+          </h5>
+        </div>
+        <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+          <div class="card-body">
+            <app-video-cmp [url]="'18SunnyNumber.m4v'"></app-video-cmp>              
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+              Practice
+            </button>
+          </h5>
+        </div>
+        <div id="Practice" class="collapse" aria-labelledby="headingFive">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div>

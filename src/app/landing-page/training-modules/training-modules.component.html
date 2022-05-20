@@ -1,0 +1,25 @@
+<div class="container" data-aos="fade-up"  data-aos-offset="100">
+    <div class="tab-title">
+        <span class="tab-pill" [id]="moduleName.id" (click)="tabChange($event)" [ngClass]="(elementId==moduleName.id)?'active':''" *ngFor="let moduleName of trainingModulesData.data" > {{moduleName.name}} </span>
+    </div>
+    <div class="container content">
+      <div *ngFor="let moduleName of trainingModulesData.data" class="fade-in" >
+        <div class="row card-group" *ngIf="elementId==moduleName.id">
+          <div class="col col-md-4 col-sm-4 col-12 card-module" *ngFor="let moduleData of moduleName.modules">
+            <div class="card-title">
+              <h4>{{moduleData.title}}</h4>
+              <h6>
+                {{moduleData.titleDescription}}
+              </h6>
+              <p *ngFor="let titlePoint of moduleData.titlePoints"> {{titlePoint}} </p>
+            </div>
+            <div class="card-content">
+              <div *ngFor="let lesson of moduleData.lessons">
+                <li><i class="fa fa-check-circle"></i> <span> {{lesson}}</span></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

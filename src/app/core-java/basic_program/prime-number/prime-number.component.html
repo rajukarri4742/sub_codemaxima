@@ -1,0 +1,120 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Prime Number</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                      A prime number is a number greater than 1 with only two factors i.e 1 and itself.
+                    </p>
+                    <p>
+                     
+A prime number cannot be divided by any other numbers without leaving a remainder.<br>
+
+For example:<br>        
+Let us Consider a number 13 ------- need to check whether 13 is a prime or not.<br>     
+Step 1: find the factors of 13<br>        
+Step 2: In table 1 and table 13 the number 13 will be divisible<br>                    
+        Like, 1*13 = 13 and 13*1=13<br>       
+Step 3: The factors of 13 is 1 and the number 13 itself.<br>  
+        So, prime number should have the factors like 1 and itself then 13 is a prime number.<br>        
+
+Let us Consider a number 10 ------- need to check whether 10 is a prime or not.<br>       
+Step 1: find the factors of 10<br>      
+Step 2: In table 1 ,2,5,10 the number 10 will be divisible<br>                    
+        Like, 1*10 = 10<br>     
+        10*1=10<br>       
+        2*5 = 10<br>       
+        5*2 = 10<br>       
+Step 3: The factors of 10 is 1 ,2,5,10 itself.<br>  
+        So, prime number should have the factors like 1 and it self.<br> 
+
+                    </p>  
+                  </div>
+                </div>
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter n value</p>
+                      <p style="margin-top: -20px;" class="card-text">5</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">5 is a prime number</p>
+                    </div>
+                  </div>
+        
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter n value</p>
+                      <p style="margin-top: -20px;" class="card-text">10</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">10 is not a prime number</p>
+                    </div>
+                  </div>
+        
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter n value</p>
+                      <p style="margin-top: -20px;" class="card-text">19</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">19 is a prime number</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/basic/prime.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+              DebuggingVideo
+            </button>
+          </h5>
+        </div>
+        <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+          <div class="card-body">
+            <app-video-cmp [url]="'11PrimeNumber.mp4'"></app-video-cmp>              
+          </div>
+        </div>
+      </div>
+
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div>

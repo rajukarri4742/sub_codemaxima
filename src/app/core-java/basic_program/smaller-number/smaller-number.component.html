@@ -1,0 +1,129 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Smaller Number</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="card border-warning" style="border: 2px solid;">
+                <div class="card" style="margin: 5px;">
+                  <div class="card-body" style="font-family: 'Inter', sans-serif;">
+                    <p>
+                      The program is to print the smaller number of given two numbers. 
+                    </p>
+                    <p>
+                      Example 1: <br>
+                        If the given two numbers are the 60 and 22<br>
+                        Program has to print 22 is lesser than 60.<br>
+                        <br>
+                        Example 2:<br>
+                        If the given two numbers are the 11 and 85<br>
+                        Program has to print 11 is lesser than 85<br>
+                    </p>
+                  </div>
+                </div>
+
+                 <!-- Starting of examples-->
+                <div class="card-group">
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center"><b>Example - 1</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter First number</p>
+                      <p style="margin-top: -20px;" class="card-text">60</p>
+                      <p class="card-text">Enter Second number</p>
+                      <p style="margin-top: -20px;" class="card-text">22</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">22 is lesser than 60</p>
+                    </div>
+                  </div>
+
+                  <div  class="card border-primary"  style="border: 2px solid; margin: 10px;">
+                    <div class="card-header text-center "><b>Example - 2</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter First number</p>
+                      <p style="margin-top: -20px;" class="card-text">11</p>
+                      <p class="card-text">Enter Second number</p>
+                      <p style="margin-top: -20px;" class="card-text">85</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">11 is lesser than 85</p>
+                    </div>
+                  </div>
+
+                  <div class="card border-primary" style="border: 2px solid; margin: 10px;" >
+                    <div class="card-header text-center"><b>Example - 3</b></div>
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Input</h6>
+                      <p class="card-text">Enter First number</p>
+                      <p style="margin-top: -20px;" class="card-text">35</p>
+                      <p class="card-text">Enter Second number</p>
+                      <p style="margin-top: -20px;" class="card-text">90</p>
+                      <h6 class="card-subtitle mb-2 text-muted">Output</h6>
+                      <p class="card-text">35 is lesser than 90</p>
+                    </div>
+                  </div>
+                </div> <!-- Ending of examples-->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/basic/smallernumber.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+              DebuggingVideo
+            </button>
+          </h5>
+        </div>
+        <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+          <div class="card-body">
+            <app-video-cmp [url]="'02SmallerNumber.m4v'"></app-video-cmp>              
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Practice" aria-expanded="false" aria-controls="Practice">
+              Practice
+            </button>
+          </h5>
+        </div>
+        <div id="Practice" class="collapse" aria-labelledby="headingFive">
+          <div class="card-body">
+            
+          </div>
+        </div>
+      </div>
+      <!--<p>   another collapse end here </p>-->
+      <app-compiler-cmp [problemId]="'addtion'" [languageId]="'JAVA8'"></app-compiler-cmp>
+    </div>
+  </div>

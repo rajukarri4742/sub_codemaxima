@@ -1,0 +1,42 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="20000">
+    <div class="carousel-inner" data-aos="fade-up"  data-aos-offset="100"
+                                                    data-aos-delay="5000"
+                                                    data-aos-duration="1000">
+      <div class="carousel-item" *ngFor="let item of testimonials; let i = index" [ngClass]="(i==0)?'active':''">
+        <div class="row">
+            <div class="testimonial-wrap col d-flex align-items-stretch col-md-4 col-sm-4 col-12" *ngFor="let itemRow of item.row">
+                <div class="testimonial-item">
+                  <div class="display-flex candidate-name">
+                    <img [src]="itemRow.profileImg" class="testimonial-img" alt="">
+                    <div class="name-and-job">
+                        <h5>{{itemRow.name}}</h5>
+                        <h6>{{itemRow.role}}({{itemRow.company}})</h6>
+                    </div>
+                  </div>
+                  <p class="title">
+                    <span class="title-word">Education: </span>
+                    <span class="title-word title-word-2">{{itemRow.background}}</span>
+                  </p>
+                  <p class="testimonial-comment">
+                              
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    {{itemRow.comment}} 
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <div class="d-flex justify-content-center" *ngIf="itemRow.social.length > 0">
+                    <a class="social-media-icon {{socialItem.socialMediaName}}" target="_blank" role="button" *ngFor="let socialItem of itemRow.social"
+                        [href]="socialItem.url"
+                    >
+                      <i class="fa fa-{{socialItem.socialMediaName}}"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-group">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">PREV</button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">NEXT</button>
+    </div>
+</div>
